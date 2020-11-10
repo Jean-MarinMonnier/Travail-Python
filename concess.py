@@ -11,6 +11,17 @@ noir_modele = ["R8", "S5", "C63", "M5", "Macan", "model S", "model X"]
 gris_modele = ["Q8", "C63", "G63", "Macan"]
 blanc_modele = ["R8", "model X"]
 
+audi_voiture = ["R8", "S5", "RS4", "Q8"]
+mercedes_voiture = ["G63", "C63", "SLS"]
+bmw_voiture = ["M5", "X6"]
+lamborghini_voiture = ["aventador", "huracan", "urus"]
+porsche_voiture = ["macan", "911 GT3 RS"]
+ferrari_voiture = ["458 italia", "F8 tributo"]
+tesla_voiture = ["model S", "model X"]
+
+nbPorte2 = ["R8", "SLS", "huracan", "aventador", "911 GT3 RS", "458 italia", "F8 tributo", ]
+nbPorte4 = ["S5", "RS4", "Q8", "G63", "C63", "M5", "urus", "macan", "model S", "model X"]
+
 class concess :
     def __init__(self, couleur, prix, marque, modele, puissance, nbPorte) :
         self.couleur = couleur
@@ -21,7 +32,7 @@ class concess :
         self.nbPorte = nbPorte
 
 if __name__ == "__main__":
-    t = concess(couleur, prix, input("Choisissez une marque"),modele, puissance, nbporte)))
+    t = concess(couleur, prix, input("Choisissez une marque"),modele, puissance, nbporte)
     if t.marque in tabMarque :
         t.couleur = input("Quelle couleur souhaitez vous ?")
     else :
@@ -30,6 +41,6 @@ if __name__ == "__main__":
         t.nbPorte = int(input("Combien de porte vous faut-il")
     else :
         print("Nous n'avons pas de véhicule de cette couleur")
-    if nbPorte in tabNbPorte :
+    if nbPorte in tabNbPorte and 
         
 
